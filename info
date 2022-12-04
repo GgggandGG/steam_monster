@@ -1,0 +1,42 @@
+class TradeRecode():
+    def __init__(self, name, sum, date):
+        self.__name = name
+        self.__sum = sum
+        self.__date = date
+
+
+class SoldGood():
+    def __init__(self, name, price):
+        self.__name = name
+        self.__price = price
+
+
+class BuingOrder():
+    def __init__(self, name, price, num, sum, seller, date):
+        self.__name = name
+        self.__price = price
+        self.__num = num
+        self.__sum = sum
+        self.__seller = seller
+        self.__date = date
+
+
+class Infomations():
+    def __init__(self):
+        self.tradecodes = []
+        self.soldgoods = []
+        self.buingorders = []
+
+    def update(self, name, price, date, num, seller):
+        if seller == None:
+            sum = price * num
+            tt = TradeRecode(name, sum, date)
+            ss = SoldGood(name,price)
+            self.tradecodes.append(tt)
+            self.soldgoods.append(ss)
+        else:
+            sum = -price *num
+            tt = TradeRecode(name, sum, date)
+            bb = BuingOrder(name, price, num, sum, seller, date)
+            self.tradecodes.append(tt)
+            self.soldgoods.append(bb)
