@@ -2,7 +2,7 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-name = []
+name = ["bird","allen"]
 def friend_menu():
     print("*       好友管理系统        *")
     print("---------------------------")
@@ -33,7 +33,7 @@ def friend_show():
 # def back():
 
 # Press the green button in the gutter to run the script.
-if __name__ == '__main__':
+def relation_main():
     while(True):
         friend_menu()
         num = int(input("请输入序号："))
@@ -45,4 +45,4 @@ if __name__ == '__main__':
             friend_show()
         # elif num == 4:
         #     back()
-
+relation_main()
