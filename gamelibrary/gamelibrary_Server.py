@@ -1,7 +1,7 @@
-from game import games_list, games_id, games_name
-from gamecommunity import gamecommunity
-from gamelibrary import Library
-from gametogether import play_together
+from gamelibrary.game import games_list, games_id, games_name
+from gamelibrary.gamecommunity import gamecommunity
+from gamelibrary.gamelibrary import Library
+from gamelibrary.gametogether import play_together
 def gamelibrary():
     userid=1 #根据用户id获取其对应的库
     user_library=Library(userid,games_list)
