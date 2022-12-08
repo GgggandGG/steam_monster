@@ -20,8 +20,9 @@ class proxy2():
             print("请输入您想出售该物品的数量：")
             num = int(input())
             seller = None
-            U.sell(name, num, price, date, seller)
-            M.PutOnSale(name, price, uname, num)
+            flag = U.sell(name, num, price, date, seller)
+            if flag == 1:
+                M.PutOnSale(name, price, uname, num)
         elif self.option =='2':
             M.show()
             print("请输入您想购买的商品的编号：")
@@ -31,8 +32,9 @@ class proxy2():
             name = M.goods[index][0]
             price = M.goods[index][1]
             seller = M.goods[index][2]
-            M.sell(index, num)
-            U.buy(name, num, price, date, seller)
+            flag = M.sell(index, num)
+            if flag == 1:
+                U.buy(name, num, price, date, seller)
         elif self.option =='3':
             print("请选择：")
             print("1.查看已出售物品：")

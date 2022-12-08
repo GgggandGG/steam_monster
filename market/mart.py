@@ -14,8 +14,10 @@ class mart():
         i = self.goods[index]
         if i[3] >= num:
             i[3] = i[3] - num
+            return 1;
         else:
             print("库存不够，请减少购买数量")
+            return 0;
         self.soldout()
 
     def show(self):

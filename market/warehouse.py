@@ -7,8 +7,8 @@ class warehouse():
         flag = 0
         for i in self.__goods:
             if i[0] == name:
+                flag = 1
                 i[1] = i[1]+num
-                flag == 1
                 print("您已成功购买该物品！")
                 break
         if flag == 0:
@@ -20,13 +20,17 @@ class warehouse():
             if i[0] == name:
                 flag = 1
                 if num <= i[1]:
-                    i[1] = i[1]-num
+                    i[1] = i[1] - num
                     print("您已成功出售该物品！")
+                    if i[1] == 0:
+                        self.__goods.remove(i)
+                    return 1
                 else:
                     print("您的仓库中没有那么多库存")
-                break
+                    return 0
         if flag == 0:
             print("您的仓库中没有该物品！")
+            return 0
 
     def show(self):
         print("仓库：")
