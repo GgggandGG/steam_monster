@@ -3,7 +3,7 @@ class mart():
         self.goods = [["lifeline", 3.5, "yfy", 5], ["plague", 4.5, "yff", 6]]
 
     def PutOnSale(self, name, price, seller, num):
-        self.goods.append(name, price, seller, num)
+        self.goods.append([name, price, seller, num])
 
     def soldout(self):
         for i in self.goods:

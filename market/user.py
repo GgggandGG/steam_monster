@@ -1,28 +1,17 @@
-from market.info import informations
-from market.warehouse import warehouse
+from market.proxy1 import proxy1
 
 class user():
     def __init__(self, uname):
-        self.WareHouse = warehouse(uname)
-        self.Information = informations(uname)
+        self.Proxy = proxy1(uname)
 
     def showhouse(self):
-        self.WareHouse.show()
+        self.Proxy.showhouse()
 
     def buy(self, name, num, price, date, seller):
-        self.WareHouse.buyin(name, num)
-        self.Information.update(name, price, date, num, seller)
+        self.Proxy.buy(name, num, price, date, seller)
 
     def sell(self, name, num, price, date, seller ):
-        self.WareHouse.sellout(name, num)
-        self.Information.update(name, price, date, num, seller)
+        self.Proxy.sell(name, num, price, date, seller)
 
     def check(self, option):
-        if option=='1':
-            self.Information.printout1()
-        elif option=='2':
-            self.Information.printout2()
-        elif option == '3':
-            self.Information.printout3()
-        else:
-            print("请输入正确选项")
+        self.Proxy.check(option)
