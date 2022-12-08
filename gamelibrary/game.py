@@ -1,6 +1,3 @@
-
-
-
 class Game:
   def __init__(self,gameid, gamename):
     self.__gameid = gameid
