@@ -17,4 +17,3 @@ def relation_main():
         elif num == 5:
             logger = Logger(__name__).get_logger()
             logger.info("==========\n")
-relation_main()
