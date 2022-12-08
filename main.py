@@ -10,7 +10,7 @@ from Game_Wallet.wallet_main import Gamewallet_main
 wallet = Wallet()
 
 if __name__ == "__main__":
-    login_main()
+    # login_main()
     while(1):
         print("\n**********主界面**********")
         print("1、好友\n"
