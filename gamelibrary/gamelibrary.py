@@ -1,6 +1,5 @@
-from game import Game, games_list, games_id, games_name
-from gametogether import play_together
-
+from gamelibrary.game import Game, games_list, games_id, games_name
+from gamelibrary.gametogether import play_together
 
 class Library(Game):
     def __init__(self,id,games_list):
