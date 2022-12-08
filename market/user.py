@@ -11,7 +11,8 @@ class user():
         self.Proxy.buy(name, num, price, date, seller)
 
     def sell(self, name, num, price, date, seller ):
-        self.Proxy.sell(name, num, price, date, seller)
+        flag = self.Proxy.sell(name, num, price, date, seller)
+        return flag
 
     def check(self, option):
         self.Proxy.check(option)

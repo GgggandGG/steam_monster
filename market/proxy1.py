@@ -15,8 +15,9 @@ class proxy1():
         self.Information.update(name, price, date, num, seller)
 
     def sell(self, name, num, price, date, seller ):
-        self.WareHouse.sellout(name, num)
+        flag = self.WareHouse.sellout(name, num)
         self.Information.update(name, price, date, num, seller)
+        return flag
 
     def check(self, option):
         if option=='1':
