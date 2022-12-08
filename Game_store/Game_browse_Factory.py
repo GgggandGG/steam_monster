@@ -9,7 +9,7 @@ class Game_Browse_Window():
         print(f"游戏名：{self.game_name}")
         print(f"游戏信息:"
               f"{self.game_info}\n"
-              f"游戏价格:{self.game_price}")
+              f"游戏价格:S{self.game_price}")
 
 # 冒险类游戏窗口
 class AdventureGame_Browse(Game_Browse_Window):
