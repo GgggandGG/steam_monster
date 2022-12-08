@@ -25,4 +25,3 @@ def chatandinvite(name):
             break
         else:
             print("请输入正确选项")
-chatandinvite('bob')
