@@ -2,7 +2,7 @@ from Sessionfactory import Sessionfactory
 from operation_sendmessage import operation_sendmessage
 from operation_invitegame import operation_invitegame
 
-if __name__ == "__main__":
+def chatandinvite():
     while 1:
         print("-----------------")
         print("请选择您要使用的功能：")
