@@ -1,5 +1,5 @@
 #工厂模式
-from Attainsession import Attainsession
+from chatandinvite.Attainsession import Attainsession
 class Sessionfactory():
     def __init__(self,name):
         self.__name=name

@@ -1,4 +1,4 @@
-from Session import Session
+from chatandinvite.Session import Session
 #实现session接口
 class Attainsession(Session):
     def __init__(self,name):

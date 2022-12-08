@@ -1,6 +1,6 @@
-from Sessionfactory import Sessionfactory
-from operation_sendmessage import operation_sendmessage
-from operation_invitegame import operation_invitegame
+from chatandinvite.Sessionfactory import Sessionfactory
+from chatandinvite.operation_sendmessage import operation_sendmessage
+from chatandinvite.operation_invitegame import operation_invitegame
 
 def chatandinvite():
     while 1:

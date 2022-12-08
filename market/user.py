@@ -1,5 +1,5 @@
-from info import informations
-from warehouse import warehouse
+from market.info import informations
+from market.warehouse import warehouse
 
 class user():
     def __init__(self, uname):

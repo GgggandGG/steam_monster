@@ -1,4 +1,4 @@
-from Strategy import Strategy
+from chatandinvite.Strategy import Strategy
 class operation_sendmessage(Strategy):
     def doopration(self):
         print("--------{0}---------".format(self.name))
