@@ -45,4 +45,4 @@ def relation_main():
             friend_show()
         # elif num == 4:
         #     back()
-relation_main()
+

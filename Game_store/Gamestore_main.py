@@ -1,6 +1,6 @@
 import time
 
-from Game_browse_Factory import *
+from Game_store.Game_browse_Factory import *
 from Game_store.Game_Window_Decorate import *
 from Game_store.User_and_Admin import *
 from Game_store.Game_DB import game_DB
@@ -28,7 +28,7 @@ def GameStore_main(wallet):
     game_DB.attach(local_game_store)
     game_DB.init_gamelist(game_browse_list)
     while(1):
-        print("\n\n******商店******")
+        print("\n******商店******")
         print("1、创建游戏并上传"
               "\n2、浏览游戏商城并购买"
               "\n3、退回上一步"
