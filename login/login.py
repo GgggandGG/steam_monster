@@ -30,7 +30,7 @@ def login_main():
         else:
             print("请输入正确选项")
 
-    from sendway import SendWay
+    from login.sendway import SendWay
     while 1:
         print("------------------------")
         print("请选择获得数字令牌的方式：")

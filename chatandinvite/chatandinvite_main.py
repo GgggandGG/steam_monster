@@ -1,8 +1,7 @@
-from Sessionfactory import Sessionfactory
-from operation_sendmessage import operation_sendmessage
-from operation_invitegame import operation_invitegame
-
-def chatandinvite():
+from chatandinvite.Sessionfactory import Sessionfactory
+from chatandinvite.operation_sendmessage import operation_sendmessage
+from chatandinvite.operation_invitegame import operation_invitegame
+def chatandinvite(name):
     while 1:
         print("-----------------")
         print("请选择您要使用的功能：")
@@ -10,7 +9,6 @@ def chatandinvite():
         print("2.游戏邀请")
         print("3.查看聊天记录")
         print("-----------------")
-        name = '1'
         option = input()
         sessionfactory = Sessionfactory(name)
         attanseesion = sessionfactory.createsession()
