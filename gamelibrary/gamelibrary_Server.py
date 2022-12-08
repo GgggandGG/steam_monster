@@ -45,4 +45,3 @@ def gamelibrary():
                 print("请输入正确的指令")
         else:
             print("请输入正确的指令")
-gamelibrary()
