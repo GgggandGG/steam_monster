@@ -1,7 +1,7 @@
 class frind_info():
     def __init__(self):
         self.__friend_name=['bob','alice','brown']
-        self.__friend_message={i:[] for i in self.__friend_name}
+        self.__friend_message={'bob':['你好','在吗','再见'],'alice':['你好','在吗','再见'],'brown':['你好','在吗','再见']}
 
     def add_user(self,name):
         self.__friend_name.append(name)
@@ -14,7 +14,7 @@ class frind_info():
             print(i)
 
     def print_user_message(self,name):
-        for i in self.__friend_message[name]:
-            print(i)
+            for i in self.__friend_message[name]:
+                print(i)
 
 
