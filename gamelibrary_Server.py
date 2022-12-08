@@ -1,4 +1,5 @@
 from game import games_list, games_id, games_name
+from gamecommunity import gamecommunity
 from gamelibrary import Library
 from gametogether import play_together
 def gamelibrary():
@@ -8,7 +9,6 @@ def gamelibrary():
     print("您的游戏库:(请输入游戏id进行游玩或其他操作)")
     user_library.listgames()
     print("**************************输入quit退出库**")
-
     while(1):
         input1=input()
         option_game=eval(input1)
@@ -26,6 +26,7 @@ def gamelibrary():
             if input2 == "quit":
                 break
             if option_model==1:
+
                 print("开始游玩" + games_name[option_game - 1])
                 print("读取游戏文件中。。。")
                 print("***************************************")
@@ -38,13 +39,10 @@ def gamelibrary():
 
             elif option_model == 3:
                 print(games_name[option_game - 1] + "社区 ")
-                print("***************************************")
-                print("*创意工坊  评测  个人数据  最近新闻        *")
-                print("*                                     *")
-                print("*                                     *")
-                print("***************************************")
+                gamecommunity()
 
             else:
                 print("请输入正确的指令")
         else:
             print("请输入正确的指令")
+gamelibrary()
