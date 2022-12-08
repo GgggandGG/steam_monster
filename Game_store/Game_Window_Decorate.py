@@ -1,4 +1,4 @@
-from Game_browse_Factory import *
+from Game_store.Game_browse_Factory import *
 
 # 窗口装饰器
 class WindowDecorate:
@@ -8,7 +8,7 @@ class WindowDecorate:
     def AddStars(self):
         print("\n**********")
         self.browse_window.browse_print()
-        print("\n**********")
+        print("**********")
     # 前后用-包裹
     def Addcrossing(self):
         print("\n----------")
