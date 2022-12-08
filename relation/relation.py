@@ -37,5 +37,6 @@ class TopRelation():
         num_3 = int(input("请输入序号："))
         if num_3 ==1:
             personname = input("请输入姓名:")
+            chatandinvite(personname)
         elif num_3 ==2:
             quit()

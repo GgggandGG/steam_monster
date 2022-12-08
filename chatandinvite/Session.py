@@ -6,5 +6,5 @@ class Session(metaclass=ABCMeta):
         pass
 
     @abstractmethod
-    def excutestategy(self,context):
+    def excutestategy(self,strategy):
         pass

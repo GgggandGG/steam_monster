@@ -1,5 +1,5 @@
-from relation import TopRelation
-from LoggerFactory import *
+from relation.relation import TopRelation
+from relation.LoggerFactory import *
 # Press the green button in the gutter to run the script.
 def relation_main():
     TopRelation1 = TopRelation()

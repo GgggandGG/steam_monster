@@ -31,9 +31,9 @@ def market():
             index = int(input())
             print("请输入您想购买该商品的数量：")
             num = int(input())
-            name = mart.goods[index][0]
-            price = mart.goods[index][1]
-            seller = mart.goods[index][2]
+            name = M.goods[index][0]
+            price = M.goods[index][1]
+            seller = M.goods[index][2]
             M.sell(index, num)
             U.buy(name, num, price, date, seller)
         elif option =='3':
